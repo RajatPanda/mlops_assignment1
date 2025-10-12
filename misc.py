@@ -73,5 +73,4 @@ def run_complete_pipeline(model, model_name="Model"):
     X_train, X_test, y_train, y_test, scaler = preprocess_data(df)
     trained_model = train_model(model, X_train, y_train)
     mse = evaluate_model(trained_model, X_test, y_test, model_name)
-    y_pred = trained_model.predict(X_test)
     return mse
